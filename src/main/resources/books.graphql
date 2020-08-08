@@ -1,0 +1,24 @@
+schema {
+ query: Query
+}
+
+type Query {
+    allBooks : [BookModel]
+    book(id: String): BookVO
+}
+
+type BookModel {
+    isn: String
+    title: String
+    publisher: String
+    authors: [String]
+    publishedDate: String
+}
+
+type BookVO {
+    isn: String
+    title: String
+    publisher: String
+    authors: [String]
+    publishedDate: String
+}
